@@ -4,86 +4,10 @@
 
 * [`arrayMax`](#arraymax)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### arrayMax
 
 
 
 ## 参考
 
-> <a href=''https://github.com/Chalarangelo/30-seconds-of-code"">30-seconds-of-code</a>
+> <a href="https://github.com/Chalarangelo/30-seconds-of-code">30-seconds-of-code</a>
