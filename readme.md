@@ -4,6 +4,22 @@
 
 * [`arrayMax`](#arraymax)
 
+* [`arrayMin`](#arrayMin)
+
+* [`countOccurrences`](countOccurrences)
+
+* [`flatten`](flatten)
+
+* [`diffrence(`](diffrence)
+
+* [``]()
+
+* [``]()
+
+  [``]()
+
+  [``]()
+
 ### arrayMax
 
 

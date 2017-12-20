@@ -1,4 +1,7 @@
 class QMethods {
+  noRepeat(arr){
+    return [...new Set(arr)]
+  }
   //查找数组最大
   arrayMax(arr) {
     return Math.max(...arr);
@@ -26,8 +29,9 @@ class QMethods {
   }
 //  对比两个数组并且返回其中不同的元素
   diffrence(arrA,arrB){
-    let arrA = new Set(arrA)
-
+    return arrB.filter((v) => {
+      return !arrA.includes(v)
+    })
   }
 }
 
