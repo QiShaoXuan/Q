@@ -16,9 +16,9 @@
 
 * [`diffrence`](diffrence)
 
-* [``]()
+* [`dropRight`](dropRight)
 
-* [``]()
+* [`dropElements`](dropElements)
 
 * [``]()
 
@@ -70,7 +70,7 @@ const chunk = (arr,size=1) => {
 
 返回数组中某个值的出现次数
 
-```javascript
+```js
 const countOccurrences = (arr, value) => {
   return arr.reduce((a, v) => v === value ? a + 1 : a + 0, 0);
 }
@@ -81,7 +81,7 @@ const countOccurrences = (arr, value) => {
 已depth作为深度降维多维数组
 depth默认为-1将多维数组降维为一维数组
 
-```javascript
+```js
 const flatten = (arr, depth = -1) => {
   if (depth === -1) {
     return [].concat(...arr.map(v => Array.isArray(v) ? this.flatten(v) : v))
@@ -97,9 +97,30 @@ const flatten = (arr, depth = -1) => {
 
 数组A与数组B的不同元素
 
-```javascript
+```js
 const diffrence = (arrA, arrB) => {
   return arrA.filter(v => !arrB.includes(v))
+}
+```
+
+### dropRight
+
+从右删除n个元素
+
+```js
+const dropRight = (arr, n = 0) => {
+  return n < arr.length ? arr.slice(0, arr.length - n) : [];
+}
+```
+
+### dropElements
+
+截取第一个符合条件的元素及其以后的元素
+
+```js
+const dropElements = (arr, fn) => {
+  while (arr.length && !fn(arr[0])) arr = arr.slice(1)
+  return arr;
 }
 ```
 
