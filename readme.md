@@ -3,25 +3,17 @@
 记录碰到的有趣的和自己写的常用代码，封装在Q函数中。
 
 * [`noRepeat`](#noRepeat)
-
 * [`arrayMax`](#arraymax)
-
 * [`arrayMin`](#arrayMin)
-
 * [`chunk`](#chunk)
-
 * [`countOccurrences`](countOccurrences)
-
 * [`flatten`](flatten)
-
 * [`diffrence`](diffrence)
-
 * [`dropRight`](dropRight)
-
 * [`dropElements`](dropElements)
-
+* [`everyNth`](everyNth)
+* [`nthElement`](nthElement)
 * [``]()
-
 * [``]()
 
 
@@ -122,6 +114,22 @@ const dropElements = (arr, fn) => {
   while (arr.length && !fn(arr[0])) arr = arr.slice(1)
   return arr;
 }
+```
+
+### everyNth
+
+返回数组中下标间隔nth的元素
+
+```js
+const everyNth = (arr, nth) => arr.filter((v, i) => i % nth === nth - 1)
+```
+
+### nthElement
+
+返回数组中第n个元素，支持负数
+
+```js
+const nthElement = (arr, n = 0) => (n >= 0 ? arr.slice(n, n + 1) : arr.slice(n))[0]
 ```
 
 
