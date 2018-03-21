@@ -62,7 +62,21 @@ class QMethods {
   nthElement(arr, n = 0) {
     return (n >= 0 ? arr.slice(n, n + 1) : arr.slice(n))[0]
   }
-}
 
+  // 返回数组头元素
+  head(arr) {
+    return arr[0]
+  }
+
+  // 返回数组末尾元素
+  last(arr) {
+    return arr[arr.length - 1]
+  }
+
+  // 返回两个数组中相同的元素
+  intersection(arr1, arr2) {
+    return arr2.filter(v => arr1.includes(v))
+  }
+}
 
 let Q = new QMethods();
