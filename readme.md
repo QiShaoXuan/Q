@@ -1,6 +1,7 @@
 # Q
 
-记录碰到的有趣的和自己写的常用代码，封装在Q函数中。
+实现一些工具类函数（不考虑兼容）
+
 
 * [`noRepeat`](#noRepeat)
 * [`arrayMax`](#arraymax)
