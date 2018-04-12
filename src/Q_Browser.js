@@ -11,7 +11,7 @@ class Q_browser {
 
   // 判断元素是否在可视范围内
   // partiallyVisible为是否为完全可见
-  elementIsVisibleInViewport(el, partiallyVisible = false) => {
+  elementIsVisibleInViewport(el, partiallyVisible = false) {
     const {
       top,
       left,
@@ -25,11 +25,12 @@ class Q_browser {
   }
 
   // 获取滚动条位置
-  getScrollPosition(el = window)(
+  getScrollPosition(el = window){
     return {
       x: (el.pageXOffset !== undefined) ? el.pageXOffset : el.scrollLeft,
       y: (el.pageYOffset !== undefined) ? el.pageYOffset : el.scrollTop
-    });
+    }
+  };
 
   // 获取url中的参数
   getURLParameters(url) {
@@ -41,7 +42,7 @@ class Q_browser {
   //  页面跳转，是否记录在history中
   redirect(url,asLink=true){
     asLink?window.location.href = url:window.location.replace(url)
-  }   
+  }
 
   //  滚动条回到顶部动画
   scrollToTop(){
