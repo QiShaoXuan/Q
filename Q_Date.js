@@ -1,6 +1,6 @@
-class Q_Date{
+export default class Q_Date{
     getTwoDayDifference(dateStart,dateEnd){
-        
+
     }
 
     // 时间戳转换为时间，默认为当前时间转换结果

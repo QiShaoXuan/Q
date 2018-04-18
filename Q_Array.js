@@ -1,4 +1,4 @@
-class QMethods {
+export default class QMethods {
   //  数组去重
   noRepeat(arr) {
     return [...new Set(arr)]
