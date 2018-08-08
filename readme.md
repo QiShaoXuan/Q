@@ -1,7 +1,6 @@
 # Q
 
-实现一些工具类函数（不考虑兼容）
-
+实现一些工具类函数
 
 * [`noRepeat`](#noRepeat)
 * [`arrayMax`](#arraymax)
