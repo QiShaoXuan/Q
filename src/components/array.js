@@ -14,7 +14,7 @@ const array = {
     return Math.min(...arr);
   },
 
-  //  返回已size为长度的数组分割的原数组
+  // 返回已size为长度的数组分割的原数组
   chunk(arr, size = 1) {
     return Array.from({
       length: Math.ceil(arr.length / size)

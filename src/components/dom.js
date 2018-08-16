@@ -1,6 +1,5 @@
 const dom = {
-  // 判断元素是否在可视范围内
-  // partiallyVisible为是否为完全可见
+  // 判断元素是否在可视范围内, partiallyVisible为是否为完全可见
   elementIsVisibleInViewport(el, partiallyVisible = false) {
     const {
       top,
